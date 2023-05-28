@@ -36,7 +36,7 @@
     width: 79%;
     margin-left: 9%;
     margin-right: 7%;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     height: 44vh;
     margin-top: 2vh;
     /* border-radius: 8px; */
@@ -62,10 +62,60 @@
 
 .text-left {
     width: 60%;
-    background-color: yellow;
+    /* background-color: red; */
+}
+.text-left .title {
+    width: 87%;
+    /* border: 1px solid rgb(9, 214, 108); */
+    margin-left: 7%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    padding: 2.3vh 0;
+    height: 42%;
+}
+.detail  {
+    width: 30%;
+    /* border: 1px solid rgb(9, 214, 108); */
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+    height: 9%;
+    align-items: center;
+}
+.time-icon {
+    display: flex;
+    height: 100%;
+    width: 47%;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail p {
+    font-size: 14px;
+    color: #999999;
+}
+.book-icon {
+    color: #4FD839;
+}
+.brief {
+    width: 87%;
+    margin-left: 7%;
+    /* border: 1px solid black; */
+    height: 49%;
+    padding: 3.5vh 0;
+    color: white;
+}
+.hr-line{
+    width: 90%;
+    margin-left: 5%;
+    height: .3vh;
+    background-color: white;
+}
+a {
+    text-decoration: none;
 }
 .buffer{
-    height: 7vh;
+    height: 15vh;
     width: 100%;
     background-color: #152b61;
 }

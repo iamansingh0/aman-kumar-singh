@@ -44,10 +44,10 @@ const Background = () => {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#000000",
+              color: "#fff",
             },
             polygon: {
-              nb_sides: 5,
+              nb_sides: 2,
             },
             image: {
               src: "img/github.svg",
