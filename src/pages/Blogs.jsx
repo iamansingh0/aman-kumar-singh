@@ -2,11 +2,13 @@ import React from 'react'
 import Nav from '../components/Nav'
 import { blogs } from '../data/data'
 import '../css/blogs.css'
+import Background from '../components/Background'
 
 const Blogs = () => {
   return (
     <div className="blogs-div">
       <Nav />
+      <Background />
       <div className="blogs-container">
         <div className="article-text-div">
           <h4 className="article">ALL ARTICLES</h4>
