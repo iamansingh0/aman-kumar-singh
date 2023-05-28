@@ -1,0 +1,47 @@
+/* Blogs STYLING START */
+
+.blogs-div{
+    background-color: #152b61;
+    margin-top: 10vh;
+}
+.blogs-container {
+    min-height: 90vh;
+    width: 100%;
+}
+.article-text-div {
+    display: flex;
+    /* padding-top: 3.5vh; */
+    border: 1px solid red;
+    width: 22%;
+    margin-left: 4.25%;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
+.article {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-left: 6%;
+}
+.line {
+    height: .5vh;
+    width: 10vw;
+    background-color: #4FD839;
+    position: relative;
+    top: 3px;
+}
+
+.blog {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    border: 1px solid black;
+    height: 44vh;
+    margin-top: 2vh;
+}
+.buffer{
+    height: 4vh;
+    width: 100%;
+    background-color: #152b61;
+}

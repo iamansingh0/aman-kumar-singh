@@ -1,13 +1,32 @@
 import React from 'react'
 import Nav from '../components/Nav'
+import { blogs } from '../data/data'
+import '../css/blogs.css'
 
 const Blogs = () => {
   return (
-    <div>
+    <div className="blogs-div">
       <Nav />
-      <h3>This is Blogs page</h3>
-    </div>
-  )
-}
+      <div className="blogs-container">
+        <div className="article-text-div">
+          <h4 className="article">ALL ARTICLES</h4>
+          <div className="line"></div>
+        </div>
+        {blogs.map((blog) => {
+          const { id, title, image, date, time, brief } = blog;
+          return (
+            <article key={id} className="blog">
+              <h2 className="title"> </h2>
 
-export default Blogs
+              {/* <hr style={{ color: "white", width: "3px" }} /> */}
+            </article>
+          );
+        })}
+      </div>
+      <div className="buffer"></div>
+    </div>
+  );
+};
+
+export default Blogs;
+

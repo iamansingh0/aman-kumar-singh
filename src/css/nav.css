@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAV BAR STYLING START */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: #0E2764;
+    /* box-shadow:  #0E2764 0px 3px 8px; */
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.logo {
+    /* background-color: red; */
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.logo #name {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    display: flex;
+    width: 40%;
+    /* border: 1px solid blue; */
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+.links .link-li .item {
+    text-decoration: none;
+    /* border: 1px solid yellow; */
+    padding: 5px 10px;
+    color: #4FD839;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.links .link-li .item:hover {
+    background-color: #4FD839;
+    color: white;
+}
+li {
+    list-style: none;
+}
+
+/* NAV BAR STYLING END */
+
