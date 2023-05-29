@@ -1,8 +1,10 @@
 /* Blogs STYLING START */
 :root{
-    --back-col: #2a2a2a;
+    --back-col: #080402;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 .blogs-div{
     /* background-color: #152b61; */
     margin-top: 10vh;

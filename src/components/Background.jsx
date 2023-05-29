@@ -23,7 +23,7 @@ const Background = () => {
       }}
       params={{
         background: {
-          color: "#2a2a2a",
+          color: "#080402",
         },
         fullScreen: {
           enable: true,
