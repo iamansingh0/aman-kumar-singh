@@ -23,7 +23,7 @@ const Background = () => {
       }}
       params={{
         background: {
-          color: "#152b61",
+          color: "#2a2a2a",
         },
         fullScreen: {
           enable: true,
@@ -31,7 +31,7 @@ const Background = () => {
         },
         particles: {
           number: {
-            value: 25,
+            value: 35,
             density: {
               enable: true,
               value_area: 800,
@@ -43,7 +43,7 @@ const Background = () => {
           shape: {
             type: "circle",
             stroke: {
-              width: 0,
+              width: 1,
               color: "#fff",
             },
             polygon: {
@@ -69,7 +69,7 @@ const Background = () => {
             value: 3,
             random: true,
             anim: {
-              enable: false,
+              enable: true,
               speed: 40,
               size_min: 0.1,
               sync: false,
@@ -101,11 +101,11 @@ const Background = () => {
           detect_on: "canvas",
           events: {
             onhover: {
-              enable: false,
+              enable: true,
               mode: "repulse",
             },
             onclick: {
-              enable: false,
+              enable: true,
               mode: "push",
             },
             resize: true,
