@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Background from "../components/Background"
 import TypeAnimation from "../components/TypeAnimation"
 import "../css/home.css"
-import photo from "../img/developer.svg"
+import photo from "../img/bg2.png"
 import { socialLinks } from "../data/data"
 
 const Home = () => {
@@ -26,7 +26,9 @@ const Home = () => {
                                     const { id, href, icon } = link
                                     return (
                                         <li key={id}>
-                                            <a href={href}>
+                                            <a href={href} 
+                                                target="_blank"
+                                                rel="noreferer">
                                                 <i
                                                     className={icon}
                                                     style={{ color: "#4FD839" }}
