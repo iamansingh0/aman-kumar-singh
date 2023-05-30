@@ -24,11 +24,11 @@
 }
 .upper {
     display: flex;
-    height: 100vh;
+    height: 97vh;
 }
 .left-panel {
     width: 27%;
-    height: 100vh;
+    height: 97vh;
 }
 .about-line {
     position: absolute;
@@ -159,13 +159,13 @@
 }
 .right-panel {
     width: 73%;
-    height: 100vh;
-    background-color: var(--green);
+    height: 97vh;
+    background-color: var(--white);
 }
 
 .lower {
     height: 60vh;
-    border-top: 3px solid var(--white);
+    /* border-top: 3px solid var(--white); */
 }
 .graph {
     /* border: 1px solid red; */
