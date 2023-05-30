@@ -6,6 +6,7 @@
 }
 :root {
     --nav-back-color: #202123;
+    --dark-green: #2f9d1f;
 }
 /* NAV BAR STYLING START */
 .navbar {
@@ -56,7 +57,7 @@
     border-radius: 4px;
 }
 .links .link-li .item:hover {
-    background-color: #4FD839;
+    background-color: var(--dark-green);
     color: white;
 }
 li {
