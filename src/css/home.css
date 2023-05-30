@@ -71,8 +71,9 @@
 }
 .social-links-home {
     display: flex;
-    width: 41%;
-    column-gap: 12%;
+    width: 50%;
+    column-gap: 7%;
+    /* border: 1px solid red; */
 }
 .btn {
     width: 25%;
