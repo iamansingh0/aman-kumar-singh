@@ -159,11 +159,17 @@
     color: var(--white);
     font-weight: 700;
 }
+
+/* RIGHT PANEL */
 .right-panel {
     width: 73%;
     height: 97vh;
     background-color: var(--white);
 }
+
+
+
+/* LOWER PANEL */
 
 .lower {
     height: 150vh;
