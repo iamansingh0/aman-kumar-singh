@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom"
 const cvURL =
     "https://drive.google.com/drive/folders/11nHzAexTsBIU5YX-j8HC2HfuhY4XISz6?usp=sharing"
 import Graph from "../components/Graph"
-
+import WakatimeStats from "../components/WakatimeStats"
+import Skills from "../components/Skills"
 
 const About = () => {
     const navigate = useNavigate()
@@ -67,7 +68,9 @@ const About = () => {
                 <div className="right-panel"></div>
             </div>
             <div className="lower">
+                <Skills />
                 <Graph />
+                {/* <WakatimeStats /> */}
             </div>
         </div>
     )

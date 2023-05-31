@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --white: #DEE2E6;
+:root {
+    --white: #dee2e6;
     --primary-back: #080402;
-    --green: #4FD839;
+    --green: #4fd839;
     --dark-green: #2f9d1f;
     --secondary-back: #202123;
 }
-
+.gr-col {
+    color: var(--green);
+}
 .wh-col {
     color: var(--white);
 }
@@ -51,16 +53,16 @@
     width: 11.9vw;
     height: 26.7vh;
     border-radius: 50%;
-    margin-top:12%;
+    margin-top: 12%;
     z-index: 999;
 }
 .about-name {
     padding-top: 5%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.7rem;
     font-weight: 600;
 }
-.hr-about  {
+.hr-about {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -71,7 +73,7 @@
     height: 52%;
     /* border: 1px solid red; */
 }
-.about-social-links{
+.about-social-links {
     height: 15%;
     /* border: 1px solid brown; */
     display: flex;
@@ -94,7 +96,7 @@
     justify-content: center;
     align-items: center;
 }
-.about-social-links li a{
+.about-social-links li a {
     text-decoration: none;
 }
 .about-page-links {
@@ -108,7 +110,7 @@
 }
 .about-page-links button {
     width: 50%;
-    padding: 1.5% ;
+    padding: 1.5%;
     background-color: var(--secondary-back);
     color: var(--green);
     border: none;
@@ -116,7 +118,7 @@
     outline: none;
     border-radius: 6px;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 .about-page-links button:hover {
     background-color: var(--dark-green);
@@ -127,7 +129,7 @@
     width: 80%;
     margin-left: 10%;
     /* border: 1px solid red; */
-    height: 18%;
+    height: 20%;
     display: flex;
     margin-top: 5%;
     justify-content: center;
@@ -135,7 +137,7 @@
 }
 .cv-btn button {
     width: 90%;
-    cursor:pointer;
+    cursor: pointer;
     height: 60%;
     border: none;
     outline: none;
@@ -164,19 +166,95 @@
 }
 
 .lower {
-    height: 60vh;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
     /* border-top: 3px solid var(--white); */
+}
+.skills {
+    height: 70%;
+    /* border: 1px solid red; */
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.skills-heading {
+    /* border: 1px solid cyan; */
+    height: 14%;
+    text-align: center;
+    padding: 1% 0;
+    font-size: 2.5rem;
+    margin-top: 3vh;
+}
+.skills-box {
+    /* border: 1px solid white; */
+    flex-wrap: wrap;
+    height: 86%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    /* grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto auto; */
+    column-gap: 5%;
+    padding: 2% 2%;
+    row-gap: 14%;
+}
+.grid-item {
+    height: 43%;
+    width: 16%;
+    /* border: 1px solid red; */
+    background-color: white;
+    border-radius: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* display: inline-block; */
+    cursor: default;
+    cursor: pointer;
+}
+
+.grid-item .tooltiptext {
+    visibility: hidden;
+    padding: 0.25em 0.5em;
+    /* background-color: var(--secondary-back); */
+    /* background: transparent; */
+    color: var(--white);
+    text-align: center;
+    border-radius: 0.25em;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    transition-property: visibility;
+    transition-delay: 0s;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.grid-item:hover .tooltiptext {
+    visibility: visible;
+    transition-delay: 0.3s;
+}
+.grid-icon {
+    height: 95%;
+    width: 95%;
+    /* color: var(--green); */
 }
 .graph {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 38%;
     align-items: center;
     justify-content: center;
     row-gap: 5%;
     cursor: pointer;
+    margin-bottom: 2%;
 }
-.graph-heading{
+.graph-heading {
     font-size: 2rem;
 }

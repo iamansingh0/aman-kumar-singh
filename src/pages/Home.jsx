@@ -16,9 +16,9 @@ const Home = () => {
                         <div className="name wh-col">Aman Kumar Singh</div>
                         <div className="animated-text">
                             <p className="textbea wh-col">I am</p>
-                            <p className="typeanimation">
+                            <div className="typeanimation">
                                 <TypeAnimation />
-                            </p>
+                            </div>
                         </div>
                         <div className="links-btn">
                             <div className="social-links-home">
