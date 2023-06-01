@@ -14,17 +14,40 @@ const Terminal = () => {
                 <div className="cmd">
                     <div className="header">
                         <div className="cmd-left">
-                            <VscTerminalCmd style={{ color: "white" }} />
+                            <VscTerminalCmd style={{ color: "#c90a4d" }} />
                             <div className="cmd-prmt">Command Prompt</div>
                         </div>
                         <div className="cmd-right">
-                            <AiOutlineMinus style={{ color: "white" }} />
-                            <BiSquare style={{ color: "white" }} />
-                            <RxCross2 style={{ color: "white" }} />
+                            <div className="minus-div">
+                                <AiOutlineMinus
+                                    style={{ color: "white" }}
+                                    className="minus"
+                                />
+                            </div>
+                            <div className="minus-div">
+                                <BiSquare
+                                    style={{ color: "white" }}
+                                    className="minus"
+                                />
+                            </div>
+                            <div className="cross-div">
+                                <RxCross2
+                                    style={{ color: "white" }}
+                                    className="cross"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="main wh-col">
                         <Typewriter />
+                    </div>
+                </div>
+                <div className="npx-box">
+                    <div className="npx-text npx-box-style">
+                    👉🏻 If you have npx installed in your system, run this command in your terminal
+                    </div>
+                    <div className="npx npx-box-style">
+                        👨🏻‍💻 npx amank
                     </div>
                 </div>
             </div>

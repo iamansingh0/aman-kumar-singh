@@ -170,20 +170,21 @@
 .terminal {
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 .terminal-h1 {
     /* border: 1px solid red; */
     height: 12.3vh;
     display: flex;
     /* justify-content: start; */
-    padding-left: 6vw;
+    padding-left: 10vw;
     align-items: end;
     color: var(--dark-green);
 }
 .terminal-box {
     height: 84.7vh;
     /* border: 2px solid rgb(18, 15, 191); */
-    padding-left: 6vw;
+    padding-left: 10vw;
 }
 .terminal-box .cmd {
     height: 70%;
@@ -198,6 +199,8 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 .cmd-left {
     /* border: 1px solid yellow; */
@@ -208,21 +211,73 @@
 }
 .cmd-prmt {
     color: white;
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 .cmd-right {
-    width: 16%;
+    width: 18%;
     /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1%;
+    /* -right: 1%; */
 }
 .terminal-box .cmd .main {
     height: 94%;
     width: 100%;
     display: flex;
     background-color: #191818;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.cross-div {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross-div:hover {
+    background-color: red;
+}
+.minus-div {
+    height: 100%;
+    width: 33%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minus-div:hover {
+    background-color: #191818;
+}
+.npx-box {
+    height: 20%;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8%;
+}
+.npx-text {
+    background-color: rgb(238, 238, 238);
+    color: #191818;
+    font-size: .9rem;
+}
+.npx {
+    background-color: #191818;
+    color: var(--white);
+    font-weight: 500;
+}
+.npx-box-style{
+    height: 46%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3%;
+    border-radius: 4px;
 }
 
 /* LOWER PANEL */

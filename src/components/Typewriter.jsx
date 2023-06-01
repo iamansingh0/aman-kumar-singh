@@ -1,34 +1,57 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react"
 import "../css/type.css"
-
+const space = "\xa0\xa0"
 const Typewriter = () => {
-  const [lines, setLines] = useState([]);
-  const textLines = [
-    "> Hello!",
-    "> My name is Aman, I am 21 years old.",
-    "> I am an engineering student.",
-    "> I am majoring in Computer Engineering at VIT Chennai.",
-    "> I love coding and challenges.",
-    "> If you want to know more about me, you are in the right place."
-  ];
+    const [typedText, setTypedText] = useState("")
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (lines.length < textLines.length) {
-        setLines((prevLines) => [...prevLines, textLines[prevLines.length]]);
-      }
-    }, 1000); // Adjust the delay (in milliseconds) between lines here
+    useEffect(() => {
+        const text = `const me = {
+        ${space}name: ${space}'Aman Kumar Singh',
+          ${space}title: ${space}'Web Developer',
+          ${space}langauge_spoken: ${space}[${space}'Hindi',${space} 'English'${space}],
+          ${space}coding:${space} [${space}'Javascript', ${space}'Solidity', ${space}'C++', ${space}'Java'${space}],
+          
+          ${space}say_hi: ${space}function(👋🏻) {
+            ${space}${space}console.log('${space} 🙋🏻‍♂️${space}Thanks for dropping by, hope you find some of my work interesting.'${space})
+            ${space}},
+            
+            ${space}learning: ${space}' 🔭 I am learning advance reactJS currently.${space}',
+        }
+        
+        me.say_hi(👋🏻)`
 
-    return () => clearTimeout(timer);
-  }, [lines]);
+        let currentIndex = 0
+        let tempText = ""
 
-  return (
-    <div className='cmd-text'>
-      {lines.map((line, index) => (
-        <p key={index} style={{fontFamily:"cursive"}}>{line}</p>
-      ))}
-    </div>
-  );
-};
+        const typeText = () => {
+            if (currentIndex < text.length) {
+                const char = text.charAt(currentIndex)
+                if (char === "\n") {
+                    tempText += "<br>"
+                } else if (char === "[" || char === "]" || char === "(" || char === ")" || char === "{" || char === "}") {
+                    tempText += `<span class="brackets">${char}</span>`
+                } else if (char === "'") {
+                    tempText += `<span class="string">${char}</span>`
+                } else if (char === ",") {
+                    tempText += `${char}</span>`
+                } else {
+                    tempText += char
+                }
+                setTypedText(tempText)
+                currentIndex++
+                setTimeout(typeText, 50)
+            }
+        }
 
-export default Typewriter;
+        typeText()
+    }, [])
+
+    return (
+        <div
+            className="cmd-text"
+            dangerouslySetInnerHTML={{ __html: typedText }}
+        ></div>
+    )
+}
+
+export default Typewriter

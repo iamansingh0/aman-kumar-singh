@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
 .cmd-text {
     margin-top: 1vh;
     padding: 0 1vw;
+    color: #35BBFF;
+    font-size: .9rem;
+}
+
+.brackets {
+    color: #c90a4d;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.string {
+    color: yellow;
 }
