@@ -39,7 +39,7 @@ const Typewriter = () => {
                 }
                 setTypedText(tempText)
                 currentIndex++
-                setTimeout(typeText, 50)
+                setTimeout(typeText, 40)
             }
         }
 
