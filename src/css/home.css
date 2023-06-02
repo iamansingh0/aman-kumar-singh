@@ -2,7 +2,7 @@
 :root {
     --white: #DEE2E6;
     --primary-back: #080402;
-    --green: #4FD839;
+    --green: wheat;
     --secondary-back: #202123;
 }
 
@@ -40,8 +40,9 @@
 .name {
     font-size: 2.5rem;
     padding: 2vh 0;
-    /* border: 1px solid cyan; */
+    border: 1px solid cyan;
     font-weight: 800;
+    /* color: wheat; */
     font-family: 'Poppins', sans-serif;
 }
 .animated-text {

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #dee2e6;
+    --primary-back: #080402;
+    --green: #4fd839;
+    --dark-green: #2f9d1f;
+    --secondary-back: #202123;
+}
+.gr-col {
+    color: var(--green);
+}
+.wh-col {
+    color: var(--white);
+}
+
+.contact-container {
+    margin-top: 13vh;
+    /* color: wheat; */
+}
+
+.contact-links {
+    height: 60vh;
+    width: 100vw;
+    /* border: 1px solid red; */
+}
+.contact-heading {
+    height: 20%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 3% 0;
+    column-gap: 1%;
+}
+.heading-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.heading-line {
+    height: .5vh;
+    width: 10vw;
+    background-color: var(--green);
+    margin-top: .45%;
+}
+.link-boxes {
+    height: 78%;
+    border: 1px solid rgb(156, 18, 190);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 .5%;
+    align-items: center;
+}
+.link-box {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 35%;
+    /* border: 1px solid red; */
+    background-color: red;
+}
+.contact-form {
+    height: 80vh;
+    width: 100vw;
+    border: 1px solid wheat;
+    margin-bottom: 10vh;
+    /* margin-top:3vh; */
+}
