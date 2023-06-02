@@ -336,8 +336,6 @@
 .grid-item .tooltiptext {
     visibility: hidden;
     padding: 0.25em 0.5em;
-    /* background-color: var(--secondary-back); */
-    /* background: transparent; */
     color: var(--white);
     text-align: center;
     border-radius: 0.25em;
