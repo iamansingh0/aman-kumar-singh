@@ -53,26 +53,114 @@
 .link-boxes {
     height: 78%;
     border: 1px solid rgb(156, 18, 190);
+}
+.contact-upper{
+    height: 50%;
+    border: 1px solid rgb(156, 18, 190);
     display: flex;
-    flex-wrap: wrap;
+    /* padding-left: 5%; */
+    column-gap: 0;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0 .5%;
+    column-gap: 9%;
+    justify-content: center;
     align-items: center;
 }
 .link-box {
     width: 40%;
+    height: 72%;
+    /* border: 1px solid red; */
+    background-color: var(--white);
+    display: flex;
+    opacity: .8;
+}
+.icon-circle-box {
+    height: 100%;
+    width: 16.5%;
+    /* border: 1px solid blue; */
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-circle {
+    height: 56.5%;
+    width: 70%;
+    margin-left: 14%;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    margin-bottom: 10%;
+    background-color: var(--secondary-back);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-circle .c-icon {
+    height: 40px;
+    width: 40px;
+    color: rgb(20, 159, 213);
+}
+.link-content-box{
+    width: 84%;
+    height: 100%;
+}
+.link-content-box h2 {
+    height: 50%;
+    padding: 4% 0 0 4%;
+    color: var(--secondary-back);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.link-content-box p {
+    height: 50%;
+    padding: 1% 0 4% 4%;
+    color: var(--green);
+    font-size: .9rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.contact-lower {
+    height: 50%;
+    border: 1px solid gray;
+    display: flex;
+    column-gap: 0;
+    width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 35%;
+    column-gap: 9%;
+    justify-content: center;
+    align-items: center;
+}
+.link-content-box div {
+    display: flex;
     /* border: 1px solid red; */
-    background-color: red;
+    padding: 1.5% 0 0 3%;
+    column-gap: 2%;
+}
+.link-content-box div li {
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-back);
+}
+.link-content-box div li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-form {
     height: 80vh;
-    width: 100vw;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     border: 1px solid wheat;
     margin-bottom: 10vh;
-    /* margin-top:3vh; */
+    margin-top: 2vh;
+    background-color: var(--white);
+    opacity: .8;
 }

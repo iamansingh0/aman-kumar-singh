@@ -1,3 +1,6 @@
+import location from '../img/location.png'
+import email from '../img/email.png'
+
 export const blogs = [
     {
         id: 1,
@@ -29,8 +32,50 @@ export const blogs = [
 ]
 
 export const socialLinks = [
-    { id: 1, href: "https://www.instagram.com/iaman._1/", icon: "fab fa-instagram", },
+    {
+        id: 1,
+        href: "https://www.instagram.com/iaman._1/",
+        icon: "fab fa-instagram",
+    },
     { id: 2, href: "https://twitter.com/dank_aman", icon: "fab fa-twitter" },
     { id: 3, href: "https://github.com/iamansingh0", icon: "fab fa-github" },
-    { id: 4, href: "https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/", icon: "fab fa-linkedin" },
+    {
+        id: 4,
+        href: "https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/",
+        icon: "fab fa-linkedin",
+    },
+]
+
+export const contactLinks = [
+    { id: 1, title: "Email", data: "amankumar7355197337@gmail.com", photo:email },
+    { id: 2, title: "Location", data: "Lucknow, India", photo:location },
+]
+
+export const contactDevSocialLinks = [
+    {
+        id: 1,
+        title: "Social Links",
+        icons: [
+            {
+                id: 1,
+                href: "https://leetcode.com/amankumar7355197337/",
+                icon: "fab fa-instagram",
+            },
+            {
+                id: 2,
+                href: "https://twitter.com/dank_aman",
+                icon: "fab fa-twitter",
+            },
+            {
+                id: 3,
+                href: "https://github.com/iamansingh0",
+                icon: "fab fa-github",
+            },
+            {
+                id: 4,
+                href: "https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/",
+                icon: "fab fa-linkedin",
+            },
+        ],
+    },
 ]
