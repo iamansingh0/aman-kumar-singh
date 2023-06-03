@@ -9,7 +9,7 @@ import {
     SiHackerrank,
     SiCodechef,
 } from "react-icons/si"
-import { FaCode } from 'react-icons/fa'
+import { FaCode, FaShareAltSquare } from 'react-icons/fa'
 
 const Contact = () => {
     return (
@@ -84,7 +84,9 @@ const Contact = () => {
                             })}
                             <div className="link-box">
                                 <div className="icon-circle-box">
-                                    <div className="icon-circle"></div>
+                                    <div className="icon-circle">
+                                      <FaShareAltSquare className="c-icon"/>
+                                    </div>
                                 </div>
                                 <div className="link-content-box">
                                     <h2>Dev Links</h2>
