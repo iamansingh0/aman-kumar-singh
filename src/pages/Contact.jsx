@@ -10,6 +10,7 @@ import {
     SiCodechef,
 } from "react-icons/si"
 import { FaCode, FaShareAltSquare } from 'react-icons/fa'
+import Form from "../components/Form"
 
 const Contact = () => {
     return (
@@ -142,7 +143,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-form">
-
+                    <Form />
                 </div>
             </div>
         </div>
