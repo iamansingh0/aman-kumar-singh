@@ -4,6 +4,7 @@ import { blogs } from "../data/data"
 import "../css/blogs.css"
 import Background from "../components/Background"
 import { FaBookOpen } from "react-icons/fa"
+import Heading from "../components/Heading"
 
 const Blogs = () => {
     
@@ -12,10 +13,7 @@ const Blogs = () => {
             <Nav />
             <Background />
             <div className="blogs-container">
-                <div className="article-text-div">
-                    <h4 className="article">ALL ARTICLES</h4>
-                    <div className="line"></div>
-                </div>
+                <Heading title="ALL ARTICLES"/>
                 {blogs.map((blog) => {
                     const { title, image, date, time, brief, link, id } = blog
                     return (

@@ -11,6 +11,7 @@ import {
 } from "react-icons/si"
 import { FaCode, FaShareAltSquare } from 'react-icons/fa'
 import Form from "../components/Form"
+import Heading from "../components/Heading"
 
 const Contact = () => {
     return (
@@ -19,12 +20,7 @@ const Contact = () => {
             <Background />
             <div className="contact-container">
                 <div className="contact-links">
-                    <div className="contact-heading">
-                        <div className="heading-text wh-col">
-                            REACH OUT TO ME
-                        </div>
-                        <div className="heading-line"></div>
-                    </div>
+                    <Heading title="REACH OUT TO ME" />
                     <div className="link-boxes">
                         <div className="contact-upper">
                             {contactLinks.map((link) => {
