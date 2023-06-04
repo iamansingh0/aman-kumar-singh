@@ -3,6 +3,8 @@ import email from '../img/email.png'
 import cats from '../img/cats.png'
 import fundme from '../img/fundme.png'
 import smoke from '../img/smoke.jpg'
+import qrcode from '../img/qrcode.png'
+import notes from '../img/notes.png'
 
 export const blogs = [
     {
@@ -131,18 +133,18 @@ export const projects = [
     },
     {
         id: 4,
-        title: 'cute cats',
-        img: cats,
-        tech: ['ReactJS, Fetch-API, CSS'],
-        github: 'https://github.com/iamansingh0/cute-cats',
-        url: 'https://cute-cats-beige.vercel.app/',
+        title: 'QRcode Generator',
+        img: qrcode,
+        tech: ['JS', 'CSS', 'HTML'],
+        github: 'https://github.com/iamansingh0/QRcode-Generator-QRious',
+        url: 'https://qrcode-aman.vercel.app/',
         desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
     },
     {
         id: 5,
-        title: 'cute cats',
-        img: cats,
-        tech: ['ReactJS, Fetch-API, CSS'],
+        title: 'Notes Managaer',
+        img: notes,
+        tech: ['ReactJS, CSS'],
         github: 'https://github.com/iamansingh0/cute-cats',
         url: 'https://cute-cats-beige.vercel.app/',
         desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
