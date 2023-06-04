@@ -117,19 +117,19 @@ export const projects = [
         id: 2,
         title: 'Smoke Plumes Detection',
         img: smoke,
-        tech: ['ReactJS, Fetch-API, CSS'],
-        github: 'https://github.com/iamansingh0/cute-cats',
-        url: 'https://cute-cats-beige.vercel.app/',
-        desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
+        tech: ['Python, TensorFlow, Data science'],
+        github: '',
+        url: '',
+        desc: 'The website leverages the power of machine learning and deep learning techniques, specifically ResNet and U-Net, for smoke plume detection in satellite imagery. ResNet is utilized for accurate classification. U-Net, on the other hand, performs precise segmentation by outlining and identifying the boundaries of smoke plumes at a pixel level.'
     },
     {
         id: 3,
         title: 'fund me DAO',
         img: fundme,
-        tech: ['ReactJS, Fetch-API, CSS'],
-        github: 'https://github.com/iamansingh0/cute-cats',
-        url: 'https://cute-cats-beige.vercel.app/',
-        desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
+        tech: ['Solidity', 'EthersJS', 'Javascript'],
+        github: 'https://github.com/iamansingh0/frontend-fundMe',
+        url: 'https://iamansingh0.github.io/frontend-fundMe/',
+        desc: 'The solidity website is a decentralized application (DApp) developed using the Solidity programming language. It is designed to connect seamlessly with users cryptocurrency wallets, providing a secure and user-friendly interface for collecting funds.'
     },
     {
         id: 4,
@@ -138,15 +138,15 @@ export const projects = [
         tech: ['JS', 'CSS', 'HTML'],
         github: 'https://github.com/iamansingh0/QRcode-Generator-QRious',
         url: 'https://qrcode-aman.vercel.app/',
-        desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
+        desc: 'The website is a QR code generator built using JavaScript, HTML, and CSS. It utilizes the qrious library to generate QR codes based on linked URLs or data input. Users can input a website URL or custom data, and the website will generate a QR code that represents the provided information.'
     },
     {
         id: 5,
         title: 'Notes Managaer',
         img: notes,
         tech: ['ReactJS, CSS'],
-        github: 'https://github.com/iamansingh0/cute-cats',
-        url: 'https://cute-cats-beige.vercel.app/',
-        desc: 'The random cute cat images are being displayed by fetching the cats from cats api.'
+        github: 'https://github.com/iamansingh0/notesManager',
+        url: 'https://notes-manager-zeta.vercel.app/',
+        desc: 'The website is a note-taking application built using React. It utilizes the browser\'s local session storage to store and manage notes. With this website, users can create and delete notes.'
     }
 ]
