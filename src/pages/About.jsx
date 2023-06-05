@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import "../css/about.css"
+// import "../index.css"
 import Background from "../components/Background"
 import avatar from "../img/avatar.jpeg"
 import { socialLinks } from "../data/data"
@@ -11,20 +12,10 @@ import Skills from "../components/Skills"
 import Terminal from "../components/Terminal"
 // import ThemeButton from "../components/ThemeButton"
 
-const About = ({theme}) => {
+const About = ({theme, bgcolor, parti_color}) => {
     const navigate = useNavigate()
 
-    var bgcolor = "";
-    var parti_color = "";
-    const col_light = "#F8F6F4"
-    const col_dark = "#080402"
-    if(theme === "light") {
-        bgcolor = col_light
-        parti_color = col_dark
-    } else {
-        bgcolor = col_dark
-        parti_color = col_light
-    }
+    
     return (
         <div className="about-container">
             <Background bgcolor={bgcolor} parti_color={parti_color}/>
@@ -33,7 +24,7 @@ const About = ({theme}) => {
                     <div className="avatar-name">
                         <div className="about-line"></div>
                         <img src={avatar} alt="" className="avatar" />
-                        <p className="about-name wh-col">Aman Kumar Singh</p>
+                        <p className={`about-name ${theme === "light" ? "secon-col" : "wh-col"}`}>Aman Kumar Singh</p>
                         <div className="hr-about"></div>
                     </div>
                     <div className="about-links">
@@ -83,8 +74,8 @@ const About = ({theme}) => {
                 </div>
             </div>
             <div className="lower">
-                <Skills />
-                <Graph />
+                <Skills theme={theme}/>
+                <Graph theme={theme}/>
             </div>
         </div>
     )

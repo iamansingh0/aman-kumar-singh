@@ -1,3 +1,10 @@
+:root {
+    --white: #dee2e6;
+    --primary-back: #080402;
+    --green: #4fd839;
+    --dark-green: #2f9d1f;
+    --secondary-back: #202123;
+}
 .toggle-btn {
     background-color: yellow;
     width: 5vw;
@@ -6,4 +13,20 @@
     margin-top: 3vh;
     cursor: pointer;
     color: red;
+}
+.wh-col {
+    color: var(--white);
+}
+.secon-col {
+    color: var(--secondary-back);
+}
+.green-col {
+    color: var(--green);
+}
+
+.wh-bg {
+    background-color: var(--white);
+}
+.secon-bg {
+    background-color: var(--secondary-back);
 }

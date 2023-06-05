@@ -2,10 +2,11 @@ import React from "react"
 import "../css/about.css"
 import GitHubCalendar from "react-github-calendar"
 
-const Graph = () => {
+const Graph = ({theme}) => {
+    const themeScheme = theme === "light" ? "dark" : "light"
     return (
         <div className="graph">
-            <h2 className="wh-col graph-heading">
+            <h2 className={`graph-heading ${theme === "light" ? "secon-col" : "wh-col"}`}>
                 Github <span style={{ color: "#4FD839" }}>Contribution</span>{" "}
                 Graph
             </h2>
@@ -15,14 +16,13 @@ const Graph = () => {
                 target="_blank"
                 rel="noreferer"
             >
-                <div className="github-graph wh-col">
+                <div className={`github-graph ${theme === "light" ? "secon-col" : "wh-col"}`}>
                     <GitHubCalendar
                         username="iamansingh0"
                         blockMargin={6}
                         blockSize={10}
                         fontSize={15}
-                        color={"#32CD30"}
-                        colorScheme="light"
+                        colorScheme={themeScheme}
                     />
                 </div>
             </a>

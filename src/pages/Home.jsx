@@ -6,19 +6,8 @@ import "../css/home.css"
 import photo from "../img/bg2.png"
 import { socialLinks } from "../data/data"
 
-const Home = ({theme}) => {
+const Home = ({theme, bgcolor, parti_color}) => {
 	// console.log(theme)
-    var bgcolor = "";
-    var parti_color = "";
-    const col_light = "#F8F6F4"
-    const col_dark = "#080402"
-    if(theme === "light") {
-        bgcolor = col_light
-        parti_color = col_dark
-    } else {
-        bgcolor = col_dark
-        parti_color = col_light
-    }
     
 	return (
 		<section className="home-section">
@@ -26,9 +15,9 @@ const Home = ({theme}) => {
 			<div className="page-content">
 				<div className="text-part">
 					<div className="text">
-						<div className="name wh-col">Aman Kumar Singh</div>
+						<div className={`name ${theme === "light" ? "secon-col" : "wh-col"}`} >Aman Kumar Singh</div>
 						<div className="animated-text">
-							<p className="textbea wh-col">I am</p>
+							<p className={`textbea ${theme === "light" ? "secon-col" : "wh-col"}`}>I am</p>
 							<div className="typeanimation">
 								<TypeAnimation />
 							</div>
