@@ -1,0 +1,9 @@
+.toggle-btn {
+    background-color: yellow;
+    width: 5vw;
+    position: absolute;
+    right: 2vw;
+    margin-top: 3vh;
+    cursor: pointer;
+    color: red;
+}

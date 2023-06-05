@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 
-const Background = () => {
+const Background = ({bgcolor, parti_color}) => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -23,7 +23,7 @@ const Background = () => {
       }}
       params={{
         background: {
-          color: "#080402",
+          color: bgcolor,
         },
         fullScreen: {
           enable: true,
@@ -38,13 +38,13 @@ const Background = () => {
             },
           },
           color: {
-            value: "#ffffff",
+            value: parti_color,
           },
           shape: {
             type: "circle",
             stroke: {
               width: 1,
-              color: "#fff",
+              color: parti_color,
             },
             polygon: {
               nb_sides: 2,
@@ -78,7 +78,7 @@ const Background = () => {
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#fff",
+            color: parti_color,
             opacity: 0.4,
             width: 1,
           },

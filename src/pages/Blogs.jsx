@@ -6,12 +6,24 @@ import Background from "../components/Background"
 import { FaBookOpen } from "react-icons/fa"
 import Heading from "../components/Heading"
 
-const Blogs = () => {
+const Blogs = ({theme}) => {
+
+    var bgcolor = "";
+    var parti_color = "";
+    const col_light = "#F8F6F4"
+    const col_dark = "#080402"
+    if(theme === "light") {
+        bgcolor = col_light
+        parti_color = col_dark
+    } else {
+        bgcolor = col_dark
+        parti_color = col_light
+    }
     
     return (
         <div className="blogs-div">
             <Nav />
-            <Background />
+            <Background bgcolor={bgcolor} parti_color={parti_color}/>
             <div className="blogs-container">
                 <Heading title="ALL ARTICLES"/>
                 {blogs.map((blog) => {
