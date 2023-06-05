@@ -1,11 +1,12 @@
-import ReactRoutes from './ReactRoutes'
+import ReactRoutes from "./ReactRoutes"
+import './css/home.css'
 
 function App() {
-  return(
-    <>
-      <ReactRoutes />
-    </>
-  )
+	return (
+		<>
+			<ReactRoutes />
+		</>
+	)
 }
 
 export default App

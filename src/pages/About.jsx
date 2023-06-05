@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import "../css/about.css"
 import Background from "../components/Background"
 import avatar from "../img/avatar.jpeg"
@@ -9,12 +9,25 @@ const cvURL =
 import Graph from "../components/Graph"
 import Skills from "../components/Skills"
 import Terminal from "../components/Terminal"
+import ThemeButton from "../components/ThemeButton"
 
 const About = () => {
     const navigate = useNavigate()
+
+    // var bgcolor = "";
+    // var parti_color = "";
+    // const col_light = "#F8F6F4"
+    // const col_dark = "#080402"
+    // if(theme === "light") {
+    //     bgcolor = col_light
+    //     parti_color = col_dark
+    // } else {
+    //     bgcolor = col_dark
+    //     parti_color = col_light
+    // }
     return (
         <div className="about-container">
-            <Background />
+            <Background/>
             <div className="upper">
                 <div className="left-panel">
                     <div className="avatar-name">
