@@ -5,14 +5,26 @@
     --dark-green: #2f9d1f;
     --secondary-back: #202123;
 }
+
 .toggle-btn {
-    background-color: yellow;
-    width: 5vw;
+    /* background-color: yellow; */
+    width: 40px;
     position: absolute;
-    right: 2vw;
-    margin-top: 3vh;
+    right: 3vw;
+    margin-top: 4vh;
     cursor: pointer;
-    color: red;
+    /* color: red; */
+    border: none;
+    outline: none;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.toggle-icon {
+    font-size: 1.3rem;
 }
 .wh-col {
     color: var(--white);
@@ -35,9 +47,12 @@
 .prim-bg {
     background-color: #080402;
 }
+.prim-bg-light {
+    background-color: #c4e5c9;
+}
 .p-bs-black {
     box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.75);
 }
 .p-bs-light {
-    box-shadow: 0px 0px 10px 5px #aad2b1;
+    box-shadow: 0px 0px 5px 1px #6a746f;
 }

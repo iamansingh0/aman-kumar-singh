@@ -13,19 +13,8 @@ import { FaCode, FaShareAltSquare } from 'react-icons/fa'
 import Form from "../components/Form"
 import Heading from "../components/Heading"
 
-const Contact = ({theme}) => {
+const Contact = ({theme, bgcolor, parti_color}) => {
 
-    var bgcolor = "";
-    var parti_color = "";
-    const col_light = "#c4e5c9"
-    const col_dark = "#080402"
-    if(theme === "light") {
-        bgcolor = col_light
-        parti_color = col_dark
-    } else {
-        bgcolor = col_dark
-        parti_color = col_light
-    }
     return (
         <div>
             <Nav />

@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 }
 .blogs-div{
     /* background-color: #152b61; */
-    margin-top: 13vh;
+    margin-top: 10vh;
 }
 .blogs-container {
     min-height: 90vh;

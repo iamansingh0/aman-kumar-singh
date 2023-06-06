@@ -23,7 +23,9 @@ function App() {
     }
 	return (
 		<div className={`App ${theme}`}>
-			<button onClick={toggleTheme} className="toggle-btn">Switch</button>
+			<button onClick={toggleTheme} className={`toggle-btn ${theme==="light"?"prim-bg-light secon-col p-bs-light":"prim-bg wh-col p-bs-black"}`}>
+				<i className={`toggle-icon ${theme==="light"?"fas fa-toggle-off":"fas fa-toggle-on"}`}></i>
+			</button>
 			<ReactRoutes theme={theme} toggleTheme={toggleTheme} bgcolor={bgcolor} parti_color={parti_color}/>
 		</div>
 	)
