@@ -5,6 +5,9 @@ import fundme from '../img/fundme.png'
 import smoke from '../img/smoke.jpg'
 import qrcode from '../img/qrcode.png'
 import notes from '../img/notes.png'
+import organ from '../img/org.png'
+import calc from '../img/calc.png'
+
 
 export const blogs = [
     {
@@ -148,5 +151,23 @@ export const projects = [
         github: 'https://github.com/iamansingh0/notesManager',
         url: 'https://notes-manager-zeta.vercel.app/',
         desc: 'The website is a note-taking application built using React. It utilizes the browser\'s local session storage to store and manage notes. With this website, users can create and delete notes.'
+    },
+    {
+        id: 6,
+        title: 'Organ Transplatation System',
+        img: organ,
+        tech: ['HTML', 'CSS', 'Web3', 'Metamask', 'Solidity', 'Python', 'ML'],
+        github: 'https://github.com/iamansingh0/Blockchain-Based-Organ-Transplantation-System',
+        url: 'https://github.com/iamansingh0/Blockchain-Based-Organ-Transplantation-System',
+        desc: 'The organ transplantation system combines the use of Solidity, a programming language for smart contracts on the Ethereum blockchain, with Machine Learning (ML) algorithms for receiver-donor matching. This system aims to facilitate and optimize the process of organ donation and transplantation.'
+    },
+    {
+        id: 7,
+        title: 'Simple JS Calculator',
+        img: calc,
+        tech: ['HTML', 'CSS', 'JS'],
+        github: 'https://github.com/iamansingh0/simple_calculator_js',
+        url: 'https://calcjs-one.vercel.app/',
+        desc: 'This JavaScript Calculator is a web-based application that enables users to perform basic arithmetic operations. It features a user-friendly interface with numeric and operator buttons.'
     }
 ]

@@ -23,7 +23,7 @@ const Project = ({theme}) => {
 
 	return (
 		<div className="wrapper">
-			<div className={`p-boxes ${id ? "prompt-open" : ""}`}>
+			<div className={`p-boxes ${id ? "prompt-open" : ""} ${theme==="light"?"p-bs-light":"p-bs-black"}`}>
 				{projects.map((project) => {
 					const { id, title, img } = project
 					return (
@@ -36,7 +36,7 @@ const Project = ({theme}) => {
 								<img src={img} alt={title} />
 							</div>
 							<div className={`p-text-div ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
-								<h4>{title}</h4>
+								<p className={`${theme === "light" ? "wh-col" : "secon-col"}`}>{title}</p>
 							</div>
 						</div>
 					)
