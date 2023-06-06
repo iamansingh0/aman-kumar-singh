@@ -23,7 +23,9 @@
 .green-col {
     color: var(--green);
 }
-
+.blue-col {
+    color: rgb(20, 159, 213);
+}
 .wh-bg {
     background-color: var(--white);
 }

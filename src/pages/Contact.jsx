@@ -14,9 +14,10 @@ import Form from "../components/Form"
 import Heading from "../components/Heading"
 
 const Contact = ({theme}) => {
+
     var bgcolor = "";
     var parti_color = "";
-    const col_light = "#F8F6F4"
+    const col_light = "#c4e5c9"
     const col_dark = "#080402"
     if(theme === "light") {
         bgcolor = col_light
@@ -31,21 +32,21 @@ const Contact = ({theme}) => {
             <Background bgcolor={bgcolor} parti_color={parti_color}/>
             <div className="contact-container">
                 <div className="contact-links">
-                    <Heading title="REACH OUT TO ME" />
+                    <Heading title="REACH OUT TO ME" theme={theme}/>
                     <div className="link-boxes">
                         <div className="contact-upper">
                             {contactLinks.map((link) => {
                                 const { id, title, data, photo } = link
                                 return (
-                                    <div key={id} className="link-box">
+                                    <div key={id} className={`link-box ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
                                         <div className="icon-circle-box">
-                                            <div className="icon-circle">
+                                            <div className={`icon-circle ${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                             <img src={photo} alt={title} className="c-icon"/>
                                             </div>
                                         </div>
                                         <div className="link-content-box">
-                                            <h2>{title}</h2>
-                                            <p>{data}</p>
+                                            <h2 className={`${theme === "light" ? "wh-col" : "secon-col"}`}>{title}</h2>
+                                            <p className={`${theme === "light" ? "green-col" : "green-col"}`}>{data}</p>
                                         </div>
                                     </div>
                                 )
@@ -55,19 +56,19 @@ const Contact = ({theme}) => {
                             {contactDevSocialLinks.map((links) => {
                                 const { id, title, icons } = links
                                 return (
-                                    <div key={id} className="link-box">
+                                    <div key={id} className={`link-box ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
                                         <div className="icon-circle-box">
-                                            <div className="icon-circle">
+                                            <div className={`icon-circle ${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                               <FaCode className="c-icon"/>
                                             </div>
                                         </div>
                                         <div className="link-content-box">
-                                            <h2>{title}</h2>
+                                            <h2 className={`${theme === "light" ? "wh-col" : "secon-col"}`}>{title}</h2>
                                             <div>
                                                 {icons.map((i) => {
                                                     const { id, href, icon } = i
                                                     return (
-                                                        <li key={id}>
+                                                        <li key={id} className={`${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                                             <a
                                                                 href={href}
                                                                 target="_blank"
@@ -90,16 +91,16 @@ const Contact = ({theme}) => {
                                     </div>
                                 )
                             })}
-                            <div className="link-box">
+                            <div className={`link-box ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
                                 <div className="icon-circle-box">
-                                    <div className="icon-circle">
+                                    <div className={`icon-circle ${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                       <FaShareAltSquare className="c-icon"/>
                                     </div>
                                 </div>
                                 <div className="link-content-box">
-                                    <h2>Dev Links</h2>
+                                    <h2 className={`${theme === "light" ? "wh-col" : "secon-col"}`}>Dev Links</h2>
                                     <div>
-                                        <li>
+                                        <li className={`${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                             <a
                                                 href="https://leetcode.com/amankumar7355197337/"
                                                 target="_blank"
@@ -110,7 +111,7 @@ const Contact = ({theme}) => {
                                                 />
                                             </a>
                                         </li>
-                                        <li>
+                                        <li className={`${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                             <a
                                                 href="https://auth.geeksforgeeks.org/user/iamansingh/practice"
                                                 target="_blank"
@@ -121,7 +122,7 @@ const Contact = ({theme}) => {
                                                 />
                                             </a>
                                         </li>
-                                        <li>
+                                        <li className={`${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                             <a
                                                 href="https://www.hackerrank.com/amankumar7355191?hr_r=1"
                                                 target="_blank"
@@ -132,7 +133,7 @@ const Contact = ({theme}) => {
                                                 />
                                             </a>
                                         </li>
-                                        <li>
+                                        <li className={`${theme === "light" ? "wh-bg" : "secon-bg"}`}>
                                             <a
                                                 href="https://www.codechef.com/users/amank_123"
                                                 target="_blank"

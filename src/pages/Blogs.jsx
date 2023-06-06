@@ -10,7 +10,7 @@ const Blogs = ({theme}) => {
 
     var bgcolor = "";
     var parti_color = "";
-    const col_light = "#F8F6F4"
+    const col_light = "#c4e5c9"
     const col_dark = "#080402"
     if(theme === "light") {
         bgcolor = col_light
@@ -25,7 +25,7 @@ const Blogs = ({theme}) => {
             <Nav />
             <Background bgcolor={bgcolor} parti_color={parti_color}/>
             <div className="blogs-container">
-                <Heading title="ALL ARTICLES"/>
+                <Heading title="ALL ARTICLES" theme={theme}/>
                 {blogs.map((blog) => {
                     const { title, image, date, time, brief, link, id } = blog
                     return (
@@ -33,7 +33,7 @@ const Blogs = ({theme}) => {
                             <a href={link} target="_blank" rel="noreferer">
                                 <article className="blog">
                                     <div className="text-left">
-                                        <div className="title">{title}</div>
+                                        <div className={`title ${theme === "light" ? "secon-col" : "wh-col"}`}>{title}</div>
                                         <div className="detail">
                                             <p className="date">{date}</p>
                                             <div className="time-icon">
@@ -41,7 +41,7 @@ const Blogs = ({theme}) => {
                                                 <p className="time">{time}</p>
                                             </div>
                                         </div>
-                                        <div className="brief">{brief}</div>
+                                        <div className={`brief ${theme === "light" ? "secon-col" : "wh-col"}`}>{brief}</div>
                                     </div>
                                     <div className="img-right">
                                         <div className="img">
@@ -50,7 +50,7 @@ const Blogs = ({theme}) => {
                                     </div>
                                 </article>
                             </a>
-                            <hr className="hr-line" />
+                            <hr className={`hr-line ${theme === "light" ? "secon-bg" : "wh-bg"}`} />
                         </section>
                     )
                 })}
