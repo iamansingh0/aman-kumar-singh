@@ -1,23 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root {
-    --white: #dee2e6;
-    --primary-back: #080402;
-    --green: #4fd839;
-    --dark-green: #2f9d1f;
-    --secondary-back: #202123;
-}
-.gr-col {
-    color: var(--green);
-}
-.wh-col {
-    color: var(--white);
-}
 .projects-div {
     margin-top: 10vh;
 }
@@ -38,7 +20,7 @@
     /* opacity: .4; */
     box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.75);
     border-radius: 12px;
-    transition: opacity 0.3s ease-in-out; 
+    /* transition: opacity 0.3s ease-in-out;  */
 }
 .p-box {
     height: 37vh;
@@ -69,7 +51,7 @@
     /* border: 1px solid white; */
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     display: flex;
     align-items: center;
     justify-content: center;

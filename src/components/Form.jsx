@@ -1,12 +1,12 @@
 import React from "react"
 import { useForm, ValidationError } from "@formspree/react"
 
-function Form() {
+function Form({theme}) {
     const [state, handleSubmit] = useForm("xeqwbebn")
     if (state.succeeded) {
         return (
             <div className="box">
-                <p className="contact-p">Thanks for contacting!</p>
+                <p className={`contact-p ${theme === "light" ? "wh-col" : "secon-col"}`}>Thanks for contacting!</p>
             </div>
         )
     }

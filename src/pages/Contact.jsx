@@ -150,8 +150,8 @@ const Contact = ({theme}) => {
                         </div>
                     </div>
                 </div>
-                <div className="contact-form">
-                    <Form />
+                <div className={`contact-form ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
+                    <Form theme={theme}/>
                 </div>
             </div>
         </div>

@@ -4,7 +4,8 @@ import "../css/projects.css"
 import { RxCross2 } from "react-icons/rx"
 import { AiFillStar } from "react-icons/ai"
 
-const Project = () => {
+const Project = ({theme}) => {
+	// const h4Color = theme === "light" ? "black" : "white"
 	const [showPrompt, setShowPrompt] = useState(false)
 	const [id, setId] = useState(null)
 
@@ -34,7 +35,7 @@ const Project = () => {
 							<div className="p-img-div">
 								<img src={img} alt={title} />
 							</div>
-							<div className="p-text-div">
+							<div className={`p-text-div ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
 								<h4>{title}</h4>
 							</div>
 						</div>
