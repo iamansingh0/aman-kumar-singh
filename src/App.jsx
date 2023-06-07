@@ -4,7 +4,7 @@ import './index.css'
 
 function App() {
 	
-	const [theme, setTheme] = useState("light")
+	const [theme, setTheme] = useState("dark")
 
 	const toggleTheme = () => {
 		const newTheme = theme === "light" ? "dark" : "light"

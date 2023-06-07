@@ -3,9 +3,9 @@ import { projects } from "../data/data"
 import "../css/projects.css"
 import { RxCross2 } from "react-icons/rx"
 import { AiFillStar } from "react-icons/ai"
+import { FaInfoCircle } from "react-icons/fa"
 
-const Project = ({theme}) => {
-	// const h4Color = theme === "light" ? "black" : "white"
+const Project = ({ theme }) => {
 	const [showPrompt, setShowPrompt] = useState(false)
 	const [id, setId] = useState(null)
 
@@ -14,6 +14,7 @@ const Project = ({theme}) => {
 		setTimeout(() => {
 			setShowPrompt(true)
 		}, 50)
+		setHoveredProject(null)
 	}
 
 	const handleClickBack = () => {
@@ -23,7 +24,11 @@ const Project = ({theme}) => {
 
 	return (
 		<div className="wrapper">
-			<div className={`p-boxes ${id ? "prompt-open" : ""} ${theme==="light"?"p-bs-light":"p-bs-black"}`}>
+			<div
+				className={`p-boxes ${id ? "prompt-open" : ""} ${
+					theme === "light" ? "p-bs-light" : "p-bs-black"
+				}`}
+			>
 				{projects.map((project) => {
 					const { id, title, img } = project
 					return (
@@ -35,8 +40,20 @@ const Project = ({theme}) => {
 							<div className="p-img-div">
 								<img src={img} alt={title} />
 							</div>
-							<div className={`p-text-div ${theme === "light" ? "secon-bg" : "wh-bg"}`}>
-								<p className={`${theme === "light" ? "wh-col" : "secon-col"}`}>{title}</p>
+							<div
+								className={`p-text-div ${
+									theme === "light" ? "secon-bg" : "wh-bg"
+								}`}
+							>
+								<p
+									className={`${
+										theme === "light"
+											? "wh-col"
+											: "secon-col"
+									}`}
+								>
+									{title}
+								</p>
 							</div>
 						</div>
 					)
@@ -57,7 +74,12 @@ const Project = ({theme}) => {
 							<div className="prompt-link">
 								<AiFillStar style={{ color: "#4fd839" }} />
 								<p>
-									<a href={projects[id - 1].github} target="_blank" rel="noreferer" style={{color:"#0005DC"}}>
+									<a
+										href={projects[id - 1].github}
+										target="_blank"
+										rel="noreferer"
+										style={{ color: "#0005DC" }}
+									>
 										Github URL
 									</a>
 								</p>
@@ -65,8 +87,13 @@ const Project = ({theme}) => {
 							<div className="prompt-link">
 								<AiFillStar style={{ color: "#4fd839" }} />
 								<p>
-									<a href={projects[id - 1].url} target="_blank" rel="noreferer" style={{color:"#0005DC"}}>
-									Deployed URL
+									<a
+										href={projects[id - 1].url}
+										target="_blank"
+										rel="noreferer"
+										style={{ color: "#0005DC" }}
+									>
+										Deployed URL
 									</a>
 								</p>
 							</div>
