@@ -69,4 +69,3 @@ const Nav = () => {
 }
 
 export default Nav
-z
